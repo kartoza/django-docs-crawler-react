@@ -1,0 +1,43 @@
+{
+  "name": "django-docs-crawler-react",
+  "version": "0.0.5",
+  "description": "React component for django documentation crawler",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "vite build && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kartoza/django-docs-crawler"
+  },
+  "author": "irwan@kartoza.com",
+  "license": "GNU GPLv3",
+  "bugs": {
+    "url": "https://github.com/kartoza/django-docs-crawler/issues"
+  },
+  "homepage": "https://github.com/kartoza/django-docs-crawler#readme",
+  "devDependencies": {
+    "@types/react": "^18.2.29",
+    "react": "^18.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.14",
+    "sass": "^1.69.4"
+  },
+  "publishConfig": {
+    "@kartoza:registry": "https://npm.pkg.github.com"
+  }
+}
