@@ -81,9 +81,16 @@
     }
 
     .DocsCrawler-Close {
-      cursor: pointer;
       margin-left: auto;
       padding: 1rem;
+
+      svg {
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
     }
 
     .DocsCrawler-InnerContent {

@@ -1,6 +1,6 @@
 {
   "name": "django-docs-crawler-react",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React component for django documentation crawler",
   "main": "dist/index.umd.js",
   "module": "dist/index.mjs",
