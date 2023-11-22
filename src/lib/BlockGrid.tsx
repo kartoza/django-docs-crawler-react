@@ -30,9 +30,9 @@ export default function BlockGrid(props: BlockInterface) {
 
   /*** Get contents from docs **/
   const getContents = (content: { title?: string; description: any; thumbnail: any; html?: string; }, element: any, root: boolean): any[] => {
-    if (element && (root || !element.id)) {
-      if (!content.description && element.innerText) {
-        content.description = element.innerText.replaceAll('¶', '')
+    if (element && (root || !data.anchor || (data.anchor && !element.id))) {
+      if (!content.description && element.innerText && element.tagName.toLowerCase() === 'p') {
+        content.description = element.innerText.replaceAll('¶', '').split('.')[0]
       }
       if (!content.thumbnail && element.getElementsByTagName('img') && element.getElementsByTagName('img')[0]) {
         try {
